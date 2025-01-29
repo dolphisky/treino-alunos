@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Treino App</title>
+    <meta name="theme-color" content="#2A4365">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="auth-screen" class="auth-container">
+        <div class="auth-box">
+            <h1>🏋️ Bem-vindo!</h1>
+            <input type="password" id="access-code" placeholder="Código de Acesso">
+            <button onclick="checkAccess()">Entrar</button>
+        </div>
+    </div>
+
+    <div id="main-app" class="container">
+        <header>
+            <h1>📅 Programa de Treino</h1>
+            <div id="qrcode-container"></div>
+        </header>
+
+        <main class="training-accordion">
+            <!-- Conteúdo dos dias de treino aqui -->
+        </main>
+
+        <footer>
+            <p>© 2024 Meu Treino App</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
